@@ -8,10 +8,21 @@ class Demo{
 		int [] [] arr = new int [size] [size];
 		for(int i = 0; i<size; i++){
 			for(int j = 0; j<size; j++){
-				System.out.print("Enter nums in "+ i +" row and "+ j + "column : " );
+				System.out.print("Enter nums in "+ i +" row and "+ j + " column : " );
 				arr [i] [j] = sc.nextInt();
 			}
 		}
+		
+		System.out.println("Matrix Before Changes : ");
+		for(int i = 0; i<size; i++){
+			for(int j = 0; j<size; j++){
+				System.out.print(arr[i][j] + " ");
+			}
+			System.out.println();
+		}
+
+		System.out.println("Matrix After Changes : ");
+
 		for(int i = 0; i<size; i++){
 			for(int j = 0; j<size; j++){
 				System.out.print(arr[j][i] + " ");
